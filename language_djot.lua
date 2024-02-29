@@ -4,10 +4,8 @@ local syntax = require "core.syntax"
 syntax.add {
    name = "Djot",
    files = { "%.dj" },
-   -- space_handling = false,
+
    patterns = {
-      -- { pattern = "%s*[%*%+%-:]",         type = "operator" }, -- bullets
-      -- { pattern = "%s+",                  type = "normal"   }, -- optimization
       { pattern = { "{.-%%", "%%.-}?" },  type = "comment"  }, --comment
       { pattern = { "^>%s", "^\n"},       type = "comment"  }, -- blockquote
       { pattern = { "^#%s", "^\n"},       type = "keyword"  }, -- heading
