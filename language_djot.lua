@@ -1,11 +1,5 @@
 -- mod-version:3
 local syntax = require "core.syntax"
-local style = require "core.style"
-local core = require "core"
-local common = require "core.common"
-local djot = require "plugins.djot.djot"
-local command = require "core.command"
-local keymap = require "core.keymap"
 
 syntax.add {
    name = "Djot",
